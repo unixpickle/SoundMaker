@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA36FAE714F3303100CBA7EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA36FAE614F3303100CBA7EA /* Cocoa.framework */; };
+		FA36FAF114F3303100CBA7EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA36FAEF14F3303100CBA7EA /* InfoPlist.strings */; };
+		FA36FAF314F3303100CBA7EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA36FAF214F3303100CBA7EA /* main.m */; };
+		FA36FAF714F3303100CBA7EA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA36FAF514F3303100CBA7EA /* Credits.rtf */; };
+		FA36FAFA14F3303100CBA7EA /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA36FAF914F3303100CBA7EA /* ANAppDelegate.m */; };
+		FA36FAFD14F3303100CBA7EA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA36FAFB14F3303100CBA7EA /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA36FAE214F3303000CBA7EA /* SoundMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA36FAE614F3303100CBA7EA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA36FAE914F3303100CBA7EA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FA36FAEA14F3303100CBA7EA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA36FAEB14F3303100CBA7EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA36FAEE14F3303100CBA7EA /* SoundMaker-Info.plist */ = {isa = PBXFileReference; path = "SoundMaker-Info.plist"; sourceTree = "<group>"; };
+		FA36FAF014F3303100CBA7EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA36FAF214F3303100CBA7EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA36FAF414F3303100CBA7EA /* SoundMaker-Prefix.pch */ = {isa = PBXFileReference; path = "SoundMaker-Prefix.pch"; sourceTree = "<group>"; };
+		FA36FAF614F3303100CBA7EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FA36FAF814F3303100CBA7EA /* ANAppDelegate.h */ = {isa = PBXFileReference; path = ANAppDelegate.h; sourceTree = "<group>"; };
+		FA36FAF914F3303100CBA7EA /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
+		FA36FAFC14F3303100CBA7EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA36FADF14F3303000CBA7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA36FAE714F3303100CBA7EA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA36FAD714F3303000CBA7EA = {
+			isa = PBXGroup;
+			children = (
+				FA36FAEC14F3303100CBA7EA /* SoundMaker */,
+				FA36FAE514F3303100CBA7EA /* Frameworks */,
+				FA36FAE314F3303000CBA7EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA36FAE314F3303000CBA7EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA36FAE214F3303000CBA7EA /* SoundMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA36FAE514F3303100CBA7EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA36FAE614F3303100CBA7EA /* Cocoa.framework */,
+				FA36FAE814F3303100CBA7EA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA36FAE814F3303100CBA7EA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA36FAE914F3303100CBA7EA /* AppKit.framework */,
+				FA36FAEA14F3303100CBA7EA /* CoreData.framework */,
+				FA36FAEB14F3303100CBA7EA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FA36FAEC14F3303100CBA7EA /* SoundMaker */ = {
+			isa = PBXGroup;
+			children = (
+				FA36FAF814F3303100CBA7EA /* ANAppDelegate.h */,
+				FA36FAF914F3303100CBA7EA /* ANAppDelegate.m */,
+				FA36FAFB14F3303100CBA7EA /* MainMenu.xib */,
+				FA36FAED14F3303100CBA7EA /* Supporting Files */,
+			);
+			path = SoundMaker;
+			sourceTree = "<group>";
+		};
+		FA36FAED14F3303100CBA7EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA36FAEE14F3303100CBA7EA /* SoundMaker-Info.plist */,
+				FA36FAEF14F3303100CBA7EA /* InfoPlist.strings */,
+				FA36FAF214F3303100CBA7EA /* main.m */,
+				FA36FAF414F3303100CBA7EA /* SoundMaker-Prefix.pch */,
+				FA36FAF514F3303100CBA7EA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA36FAE114F3303000CBA7EA /* SoundMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA36FB0014F3303100CBA7EA /* Build configuration list for PBXNativeTarget "SoundMaker" */;
+			buildPhases = (
+				FA36FADE14F3303000CBA7EA /* Sources */,
+				FA36FADF14F3303000CBA7EA /* Frameworks */,
+				FA36FAE014F3303000CBA7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundMaker;
+			productName = SoundMaker;
+			productReference = FA36FAE214F3303000CBA7EA /* SoundMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA36FAD914F3303000CBA7EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = FA36FADC14F3303000CBA7EA /* Build configuration list for PBXProject "SoundMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA36FAD714F3303000CBA7EA;
+			productRefGroup = FA36FAE314F3303000CBA7EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA36FAE114F3303000CBA7EA /* SoundMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA36FAE014F3303000CBA7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA36FAF114F3303100CBA7EA /* InfoPlist.strings in Resources */,
+				FA36FAF714F3303100CBA7EA /* Credits.rtf in Resources */,
+				FA36FAFD14F3303100CBA7EA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA36FADE14F3303000CBA7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA36FAF314F3303100CBA7EA /* main.m in Sources */,
+				FA36FAFA14F3303100CBA7EA /* ANAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA36FAEF14F3303100CBA7EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA36FAF014F3303100CBA7EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA36FAF514F3303100CBA7EA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA36FAF614F3303100CBA7EA /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FA36FAFB14F3303100CBA7EA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA36FAFC14F3303100CBA7EA /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA36FAFE14F3303100CBA7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA36FAFF14F3303100CBA7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA36FB0114F3303100CBA7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundMaker/SoundMaker-Prefix.pch";
+				INFOPLIST_FILE = "SoundMaker/SoundMaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA36FB0214F3303100CBA7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundMaker/SoundMaker-Prefix.pch";
+				INFOPLIST_FILE = "SoundMaker/SoundMaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA36FADC14F3303000CBA7EA /* Build configuration list for PBXProject "SoundMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA36FAFE14F3303100CBA7EA /* Debug */,
+				FA36FAFF14F3303100CBA7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA36FB0014F3303100CBA7EA /* Build configuration list for PBXNativeTarget "SoundMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA36FB0114F3303100CBA7EA /* Debug */,
+				FA36FB0214F3303100CBA7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA36FAD914F3303000CBA7EA /* Project object */;
+}
