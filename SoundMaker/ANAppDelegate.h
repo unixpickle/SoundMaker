@@ -7,8 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ANSampleOutput.h"
 
-@interface ANAppDelegate : NSObject <NSApplicationDelegate>
+@interface ANAppDelegate : NSObject <NSApplicationDelegate> {
+    ANSampleOutput * sampleOutput;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 

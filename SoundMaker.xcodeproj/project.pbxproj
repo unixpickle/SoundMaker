@@ -13,6 +13,8 @@
 		FA36FAF714F3303100CBA7EA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA36FAF514F3303100CBA7EA /* Credits.rtf */; };
 		FA36FAFA14F3303100CBA7EA /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA36FAF914F3303100CBA7EA /* ANAppDelegate.m */; };
 		FA36FAFD14F3303100CBA7EA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA36FAFB14F3303100CBA7EA /* MainMenu.xib */; };
+		FA36FB0514F3303E00CBA7EA /* ANSampleOutput.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA36FB0414F3303E00CBA7EA /* ANSampleOutput.mm */; };
+		FA36FB0B14F3312600CBA7EA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA36FB0A14F3312600CBA7EA /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,17 @@
 		FA36FAE914F3303100CBA7EA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FA36FAEA14F3303100CBA7EA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FA36FAEB14F3303100CBA7EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FA36FAEE14F3303100CBA7EA /* SoundMaker-Info.plist */ = {isa = PBXFileReference; path = "SoundMaker-Info.plist"; sourceTree = "<group>"; };
+		FA36FAEE14F3303100CBA7EA /* SoundMaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundMaker-Info.plist"; sourceTree = "<group>"; };
 		FA36FAF014F3303100CBA7EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA36FAF214F3303100CBA7EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA36FAF414F3303100CBA7EA /* SoundMaker-Prefix.pch */ = {isa = PBXFileReference; path = "SoundMaker-Prefix.pch"; sourceTree = "<group>"; };
+		FA36FAF414F3303100CBA7EA /* SoundMaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundMaker-Prefix.pch"; sourceTree = "<group>"; };
 		FA36FAF614F3303100CBA7EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FA36FAF814F3303100CBA7EA /* ANAppDelegate.h */ = {isa = PBXFileReference; path = ANAppDelegate.h; sourceTree = "<group>"; };
+		FA36FAF814F3303100CBA7EA /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
 		FA36FAF914F3303100CBA7EA /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
 		FA36FAFC14F3303100CBA7EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA36FB0314F3303E00CBA7EA /* ANSampleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSampleOutput.h; sourceTree = "<group>"; };
+		FA36FB0414F3303E00CBA7EA /* ANSampleOutput.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ANSampleOutput.mm; sourceTree = "<group>"; };
+		FA36FB0A14F3312600CBA7EA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA36FB0B14F3312600CBA7EA /* AudioToolbox.framework in Frameworks */,
 				FA36FAE714F3303100CBA7EA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +69,7 @@
 		FA36FAE514F3303100CBA7EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA36FB0A14F3312600CBA7EA /* AudioToolbox.framework */,
 				FA36FAE614F3303100CBA7EA /* Cocoa.framework */,
 				FA36FAE814F3303100CBA7EA /* Other Frameworks */,
 			);
@@ -86,6 +93,8 @@
 				FA36FAF914F3303100CBA7EA /* ANAppDelegate.m */,
 				FA36FAFB14F3303100CBA7EA /* MainMenu.xib */,
 				FA36FAED14F3303100CBA7EA /* Supporting Files */,
+				FA36FB0314F3303E00CBA7EA /* ANSampleOutput.h */,
+				FA36FB0414F3303E00CBA7EA /* ANSampleOutput.mm */,
 			);
 			path = SoundMaker;
 			sourceTree = "<group>";
@@ -167,6 +176,7 @@
 			files = (
 				FA36FAF314F3303100CBA7EA /* main.m in Sources */,
 				FA36FAFA14F3303100CBA7EA /* ANAppDelegate.m in Sources */,
+				FA36FB0514F3303E00CBA7EA /* ANSampleOutput.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
