@@ -29,7 +29,7 @@ void ANSampleOutputBufferCallback (void * inUserData, AudioQueueRef inAQ, AudioQ
     audioFormat.mBytesPerPacket = sizeof(AudioSampleType);
     audioFormat.mFormatFlags = kAudioFormatFlagIsNonInterleaved |
                                 kAudioFormatFlagIsPacked |
-                                kAudioFormatFlagIsSignedInteger;
+                                kAudioFormatFlagIsFloat;
     
     OSStatus status = AudioQueueNewOutput(&audioFormat,
                                           ANSampleOutputBufferCallback,
@@ -39,7 +39,7 @@ void ANSampleOutputBufferCallback (void * inUserData, AudioQueueRef inAQ, AudioQ
         return NO;
     }
     
-    status = AudioQueueAllocateBuffer(audioQueue, 2 * 11025, &buffers[0]);
+    status = AudioQueueAllocateBuffer(audioQueue, sizeof(AudioSampleType) * 11025, &buffers[0]);
     if (status != noErr) {
         return NO;
     }
@@ -56,9 +56,11 @@ void ANSampleOutputBufferCallback (void * inUserData, AudioQueueRef inAQ, AudioQ
 }
 
 - (void)queueToBuffer:(AudioQueueBufferRef)buffer {
-    SInt16 * samples = (SInt16 *)buffer->mAudioData;
+    static float x = 0;
+    AudioSampleType * samples = (AudioSampleType *)buffer->mAudioData;
     for (NSUInteger i = 0; i < 11025; i++) {
-        samples[i] = 0; // sample data here, please.
+        samples[i] = (AudioSampleType)(sin(x) * 1); // sample data here, please.
+        x += 600.0 / 11025.0 * M_PI;
     }
     
     buffer->mAudioDataByteSize = audioFormat.mSampleRate * audioFormat.mBytesPerFrame;
