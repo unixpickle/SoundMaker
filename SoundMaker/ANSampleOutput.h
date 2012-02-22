@@ -13,8 +13,8 @@
 
 @interface ANSampleOutput : NSObject {
     AudioStreamBasicDescription audioFormat;
-	AudioQueueRef audioQueue;
-	AudioQueueBufferRef buffers[kBufferCount];
+    AudioQueueRef audioQueue;
+    AudioQueueBufferRef buffers[kBufferCount];
     
     NSUInteger sampleRate;
     UInt32 framesPerBuffer;
