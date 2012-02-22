@@ -11,8 +11,14 @@
 
 @interface ANAppDelegate : NSObject <NSApplicationDelegate> {
     ANSampleOutput * sampleOutput;
+    NSThread * soundThread;
+    IBOutlet NSSlider * slider;
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow * window;
+
+- (IBAction)frequencySliderChanged:(id)sender;
+
+- (void)setFrequency:(NSNumber *)aFrequency;
 
 @end
